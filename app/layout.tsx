@@ -12,7 +12,7 @@ const amiri = Amiri({
 });
 
 export const metadata: Metadata = {
-  title: "Alif Academy ",
+  title: "ALM Academy ",
   description:
     "Learn Quran online with qualified teachers. Male and female staff available.",
   icons: {
