@@ -14,6 +14,7 @@ import {
 const menuItems = [
   { label: "Home", href: "/" },
   { label: "Courses", href: "/courses" },
+  { label: "Services", href: "/services" },
   { label: "Packages", href: "/packages" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -36,7 +37,7 @@ export default function Header() {
               <BookOpen className="w-8 h-8 text-white" />
             </motion.div>
             <span className="text-xl font-bold text-white group-hover:text-emerald-100 transition-colors">
-              Alif Laam Meem Academy
+              Alif Academy
             </span>
           </Link>
 
