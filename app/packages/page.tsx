@@ -26,13 +26,13 @@ const reviews = [
 const packages = [
   {
     name: "Basic",
-    description: "Perfect for beginners",
+    description: "Best for beginners. Add $10 for R Premium.",
     price: "$30",
     features: [
       "2 live sessions per week",
       "Basic Quran reading",
-      "One on one class/live session",
-      "30 min class",
+      "One-on-one class",
+      "30-minute class",
       "24/7 support",
       "8 classes per month",
     ],
@@ -40,13 +40,13 @@ const packages = [
   },
   {
     name: "Standard",
-    description: "Most popular choice",
+    description: "Best value for most people. Add $15 for R Premium.",
     price: "$40",
     features: [
       "3 live sessions per week",
       "Basic Quran reading",
-      "One on one class/live session",
-      "30 min class",
+      "One-on-one class",
+      "30-minute class",
       "24/7 support",
       "12 classes per month",
     ],
@@ -54,19 +54,30 @@ const packages = [
   },
   {
     name: "Premium",
-    description: "For dedicated learners",
+    description: "Great for serious learners. Add $20 for R Premium.",
     price: "$60",
     features: [
       "5 live sessions per week",
-      "One on one class/live session",
+      "One-on-one class",
       "1-on-1 mentoring",
-      "30 min class",
+      "30-minute class",
       "Basic Quran reading",
-      "22 classes per month",
+      "20 classes per month",
     ],
     recommended: false,
   },
-]; 
+  {
+    name: "R Premium",
+    description: "For advanced learners.",
+    features: [
+      "Quran and Hadith translation",
+      "Islamic knowledge",
+      "Weekend classes",
+      "Quran and Hadith memorization",
+    ],
+    recommended: false,
+  },
+];
 export default function Packages() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white dark:from-emerald-950 dark:to-gray-950">
