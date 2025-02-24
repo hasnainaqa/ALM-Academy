@@ -27,49 +27,50 @@ const packages = [
   {
     name: "Basic",
     description: "Perfect for beginners",
-    price: "$29",
+    price: "$30",
     features: [
-      "3 live sessions per week",
+      "2 live sessions per week",
       "Basic Quran reading",
-      "Email support",
-      "Access to learning materials",
+      "One on one class/live session",
+      "30 min class",
+      "24/7 support",
+      "8 classes per month",
     ],
     recommended: false,
   },
   {
     name: "Standard",
     description: "Most popular choice",
-    price: "$49",
+    price: "$40",
     features: [
-      "5 live sessions per week",
-      "Advanced Quran reading and Tajweed",
+      "3 live sessions per week",
+      "Basic Quran reading",
+      "One on one class/live session",
+      "30 min class",
       "24/7 support",
-      "Personalized learning plan",
-      "Progress tracking",
+      "12 classes per month",
     ],
     recommended: true,
   },
   {
     name: "Premium",
     description: "For dedicated learners",
-    price: "$79",
+    price: "$60",
     features: [
-      "Daily live sessions",
-      "Comprehensive Quran studies",
+      "5 live sessions per week",
+      "One on one class/live session",
       "1-on-1 mentoring",
-      "Advanced certifications",
-      "Exclusive workshops",
-      "Lifetime access to materials",
+      "30 min class",
+      "Basic Quran reading",
+      "22 classes per month",
     ],
     recommended: false,
   },
-];
-
+]; 
 export default function Packages() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white dark:from-emerald-950 dark:to-gray-950">
       <Header />
-
       <main>
         <section className="py-20 bg-gradient-to-b from-emerald-50 to-white dark:from-emerald-950 dark:to-gray-950">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
