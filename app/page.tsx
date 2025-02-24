@@ -82,19 +82,6 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4">
-                  
-                  <Link href="/courses">
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="hover:bg-emerald-50 dark:hover:bg-emerald-900/20 transition-colors w-full sm:w-auto"
-                    >
-                      Explore Courses
-                    </Button>
-                  </Link>
-                </div>
-
                 <div className="flex items-center gap-4 pt-8">
                   <div className="flex -space-x-4">
                     {[1, 2, 3, 4].map((i) => (
