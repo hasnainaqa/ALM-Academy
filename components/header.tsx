@@ -37,7 +37,7 @@ export default function Header() {
               <BookOpen className="w-8 h-8 text-white" />
             </motion.div>
             <span className="text-xl font-bold text-white group-hover:text-emerald-100 transition-colors">
-              ALM Academy
+              ALM Quran Academy
             </span>
           </Link>
 
