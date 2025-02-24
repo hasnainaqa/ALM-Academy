@@ -112,9 +112,11 @@ export default function Services() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <Button variant="default" className="bg-green-700 px-8 py-6 text-lg hover:bg-green-800">
-                Start Learning Today
-              </Button>
+              <Link href="/contact">
+                <Button variant="default" className="bg-green-700 px-8 py-6 text-lg hover:bg-green-800">
+                    Start Learning Today
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </section>
@@ -239,7 +241,6 @@ export default function Services() {
                   <div className="p-6">
                     <h3 className="text-xl font-semibold mb-2">{program.title}</h3>
                     <p className="text-muted-foreground mb-4">{program.description}</p>
-                    <Button variant="outline">Learn More</Button>
                   </div>
                 </motion.div>
               ))}
@@ -376,9 +377,11 @@ export default function Services() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Button size="lg" className="bg-green-700 hover:bg-green-800">
+              <Link href="/contact">
+              <Button size="lg" variant="secondary">
                 Enroll Now
               </Button>
+            </Link>
             </motion.div>
           </div>
         </section>
