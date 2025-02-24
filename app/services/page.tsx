@@ -248,7 +248,7 @@ export default function Services() {
           </div>
         </section>
 
-        <section className="bg-green-700 dark:bg-green-900 py-20 text-white">
+        <section className="bg-emerald-600 py-20 text-white">
           <div className="container">
             <div className="grid gap-12 md:grid-cols-2 items-center">
               <motion.div
