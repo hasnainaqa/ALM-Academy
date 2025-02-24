@@ -122,7 +122,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 to-amber-50 dark:from-emerald-900/30 dark:to-amber-900/30 rounded-3xl blur-2xl"></div>
                 <Card className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-0 shadow-2xl rounded-3xl overflow-hidden">
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-learnquraan-co-uk-2025-02-22-21_45_59.png-btb6q8RT7OmjKoWyyOCf88xCsK3bGc.jpeg"
+                    src="/Images/recite.webp"
                     alt="Quran Learning"
                     className="w-full h-[400px] object-cover rounded-t-2xl"
                   />
