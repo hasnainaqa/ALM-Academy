@@ -194,12 +194,10 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 hover:bg-emerald-50 dark:hover:bg-emerald-900/20">
-                    <feature.icon className="w-12 h-12 text-emerald-600 mb-4" />
-                    <h3 className="text-xl font-semibold mb-2">
-                      {feature.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                  <Card className="p-4 h-full hover:shadow-md transition-all duration-300 hover:bg-emerald-50 dark:hover:bg-emerald-900/20">
+                    <feature.icon className="w-8 h-8 text-emerald-600 mb-3" />
+                    <h3 className="text-lg font-semibold mb-1">{feature.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">
                       {feature.description}
                     </p>
                   </Card>
