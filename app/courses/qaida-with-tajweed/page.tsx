@@ -59,13 +59,13 @@ const instructors = [
     name: "Sheikh Ahmad Al-Qari",
     role: "Lead Tajweed Instructor",
     bio: "Sheikh Ahmad has over 20 years of experience teaching Tajweed and Quranic recitation. He holds an Ijazah in Hafs from Asim.",
-    image: "/placeholder.svg",
+    
   },
   {
     name: "Ustadha Fatima Al-Hafiza",
     role: "Assistant Tajweed Instructor",
     bio: "Ustadha Fatima is a Hafiza of the Quran and specializes in teaching Tajweed to beginners. She has been teaching for 10 years.",
-    image: "/placeholder.svg",
+
   },
 ]
 
@@ -221,14 +221,7 @@ export default function QaidaWithTajweed() {
             {instructors.map((instructor, index) => (
               <Card key={index}>
                 <CardContent className="flex items-start space-x-4 pt-6">
-                  <Image
-                    src={instructor.image || "/placeholder.svg"}
-                    alt={instructor.name}
-                    width={80}
-                    height={80}
-                    className="rounded-full"
-                  />
-                  <div>
+                   <div>
                     <h3 className="text-xl font-semibold">{instructor.name}</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{instructor.role}</p>
                     <p className="mt-2">{instructor.bio}</p>
