@@ -43,7 +43,7 @@ const featuredCourses = [
     href: "/courses/online-nazra-quran",
   },
 ];
-const names = ["Saad Mahmood ", "Mehwish Batool", "Ijaz Ahmad"];
+const names = ["Mehwish Batool", "Saad Mahmood ", "Ijaz Ahmad"];
 const reviews = [
   "The quality of instruction and personal attention I received was exceptional. The teachers are highly qualified and patient.",
   "A fantastic platform! The tutors are knowledgeable, and I have learned so much in a short time.",
