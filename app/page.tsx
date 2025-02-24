@@ -83,15 +83,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact">
-                    <Button
-                      size="lg"
-                      className="bg-emerald-600 hover:bg-emerald-700 transition-colors w-full sm:w-auto"
-                    >
-                      3 Days Free Trial
-                      <ChevronRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
+                  
                   <Link href="/courses">
                     <Button
                       size="lg"
