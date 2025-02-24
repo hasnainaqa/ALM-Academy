@@ -29,7 +29,7 @@ const packages = [
     description: "Perfect for beginners",
     price: "$29",
     features: [
-      "2 live sessions per week",
+      "3 live sessions per week",
       "Basic Quran reading",
       "Email support",
       "Access to learning materials",
@@ -41,7 +41,7 @@ const packages = [
     description: "Most popular choice",
     price: "$49",
     features: [
-      "4 live sessions per week",
+      "5 live sessions per week",
       "Advanced Quran reading and Tajweed",
       "24/7 support",
       "Personalized learning plan",
