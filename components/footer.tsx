@@ -44,8 +44,8 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white">Contact Us</h4>
             <ul className="space-y-2">
               <li className="text-sm">Email: info@aliflaammeem.com</li>
-              <li className="text-sm">Phone: +1 (555) 123-4567</li>
-              <li className="text-sm">Address: 123 Quranic St, Knowledge City, 12345</li>
+              <li className="text-sm">Phone: +92 317 6456606</li>
+              <li className="text-sm">168 D Block, Old Satellite Town, Sargodha</li>
             </ul>
           </div>
         </div>
