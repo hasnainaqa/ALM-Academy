@@ -64,13 +64,11 @@ const instructors = [
     name: "Dr. Amina Al-Farooqi",
     role: "Senior Islamic Studies Professor",
     bio: "Dr. Amina holds a PhD in Islamic Studies from Al-Azhar University and has been teaching for over 20 years. She specializes in contemporary Islamic thought and women's issues in Islam.",
-    image: "/placeholder.svg",
   },
   {
     name: "Sheikh Hassan Al-Maliki",
     role: "Expert in Islamic Jurisprudence",
     bio: "Sheikh Hassan is a graduate of the Islamic University of Madinah and has extensive experience in teaching Fiqh and Usul al-Fiqh. He is known for his ability to explain complex concepts in simple terms.",
-    image: "/placeholder.svg",
   },
 ]
 
@@ -253,13 +251,6 @@ export default function IslamicTeaching() {
             {instructors.map((instructor, index) => (
               <Card key={index}>
                 <CardContent className="flex items-start space-x-4 pt-6">
-                  <Image
-                    src={instructor.image || "/placeholder.svg"}
-                    alt={instructor.name}
-                    width={80}
-                    height={80}
-                    className="rounded-full"
-                  />
                   <div>
                     <h3 className="text-xl font-semibold">{instructor.name}</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{instructor.role}</p>
