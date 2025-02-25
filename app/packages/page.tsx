@@ -31,7 +31,7 @@ const packages = [
       "24/7 support",
     ],
     recommended: false,
-    options: ["Quran and Hadith translation", "Islamic knowledge", "Weekend classes", "Quran and Hadith memorization"],
+    options: ["Weekend classes", "Quran and Hadith translation", "Islamic knowledge", "Quran and Hadith memorization"],
   },
   {
     description: "Best value for most people.",
@@ -46,7 +46,7 @@ const packages = [
       "24/7 support",
     ],
     recommended: true,
-    options: ["Quran and Hadith translation", "Islamic knowledge", "Weekend classes", "Quran and Hadith memorization"],
+    options: ["Weekend classes", "Quran and Hadith translation", "Islamic knowledge", "Quran and Hadith memorization"],
   },
   {
     description: "Great for serious learners.",
@@ -61,7 +61,7 @@ const packages = [
       "Basic Quran reading",
     ],
     recommended: false,
-    options: ["Quran and Hadith translation", "Islamic knowledge", "Weekend classes", "Quran and Hadith memorization"],
+    options: ["Weekend classes", "Quran and Hadith translation", "Islamic knowledge", "Quran and Hadith memorization"],
   },
 ]
 
