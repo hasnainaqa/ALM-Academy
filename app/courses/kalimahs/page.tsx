@@ -62,13 +62,13 @@ const instructors = [
     name: "Sheikh Yusuf Al-Qaradawi",
     role: "Senior Islamic Studies Instructor",
     bio: "Sheikh Yusuf has over 25 years of experience teaching Islamic studies. He specializes in explaining complex Islamic concepts in simple terms for beginners.",
-    image: "/placeholder.svg",
+
   },
   {
     name: "Ustadha Aminah Hassan",
     role: "Kalimahs and Aqeedah Specialist",
     bio: "Ustadha Aminah is known for her engaging teaching style and deep knowledge of Islamic creed. She has been instrumental in developing our Kalimahs curriculum.",
-    image: "/placeholder.svg",
+
   },
 ]
 
@@ -251,13 +251,7 @@ export default function Kalimahs() {
             {instructors.map((instructor, index) => (
               <Card key={index}>
                 <CardContent className="flex items-start space-x-4 pt-6">
-                  <Image
-                    src={instructor.image || "/placeholder.svg"}
-                    alt={instructor.name}
-                    width={80}
-                    height={80}
-                    className="rounded-full"
-                  />
+                  
                   <div>
                     <h3 className="text-xl font-semibold">{instructor.name}</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{instructor.role}</p>
