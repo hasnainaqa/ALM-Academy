@@ -77,13 +77,13 @@ const instructors = [
     name: "Dr. Abdullah Al-Muhaddith",
     role: "Senior Hadith Scholar",
     bio: "Dr. Abdullah has over 30 years of experience in Hadith studies. He holds a PhD in Hadith Sciences from Al-Azhar University and has authored several books on the subject.",
-    image: "/placeholder.svg",
+
   },
   {
     name: "Ustadha Aisha Siddiqua",
     role: "Hadith Interpretation Specialist",
     bio: "Ustadha Aisha specializes in contextual interpretation of Hadiths. She has been teaching Hadith studies for 15 years and is known for her insightful analysis of Prophetic traditions.",
-    image: "/placeholder.svg",
+
   },
 ]
 
@@ -263,13 +263,6 @@ export default function AhadeethStudies() {
             {instructors.map((instructor, index) => (
               <Card key={index}>
                 <CardContent className="flex items-start space-x-4 pt-6">
-                  <Image
-                    src={instructor.image || "/placeholder.svg"}
-                    alt={instructor.name}
-                    width={80}
-                    height={80}
-                    className="rounded-full"
-                  />
                   <div>
                     <h3 className="text-xl font-semibold">{instructor.name}</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{instructor.role}</p>
