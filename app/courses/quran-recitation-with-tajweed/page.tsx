@@ -62,13 +62,11 @@ const instructors = [
     name: "Qari Abdul Rahman",
     role: "Senior Tajweed Instructor",
     bio: "Qari Abdul Rahman is a renowned Quran reciter with over 25 years of teaching experience. He holds Ijazah in Hafs and Shu'bah recitations and has led Taraweeh prayers in Masjid al-Haram.",
-    image: "/placeholder.svg",
   },
   {
     name: "Ustadha Maryam Khalid",
     role: "Tajweed and Qira'at Specialist",
     bio: "Ustadha Maryam specializes in the ten Qira'at and has been teaching Tajweed for 15 years. She is known for her patient teaching style and ability to help students overcome recitation challenges.",
-    image: "/placeholder.svg",
   },
 ]
 
@@ -244,13 +242,6 @@ export default function QuranRecitationWithTajweed() {
             {instructors.map((instructor, index) => (
               <Card key={index}>
                 <CardContent className="flex items-start space-x-4 pt-6">
-                  <Image
-                    src={instructor.image || "/placeholder.svg"}
-                    alt={instructor.name}
-                    width={80}
-                    height={80}
-                    className="rounded-full"
-                  />
                   <div>
                     <h3 className="text-xl font-semibold">{instructor.name}</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{instructor.role}</p>
