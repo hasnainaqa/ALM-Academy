@@ -61,13 +61,13 @@ const instructors = [
     name: "Qari Abdullah Al-Makki",
     role: "Senior Nazra Instructor",
     bio: "Qari Abdullah has over 30 years of experience in teaching Quranic recitation. He holds Ijazah in Hafs and Shu'bah recitations and has trained numerous Qaris worldwide.",
-    image: "/placeholder.svg",
+
   },
   {
     name: "Ustadha Maryam Al-Qaria",
     role: "Nazra and Tajweed Specialist",
     bio: "Ustadha Maryam is known for her melodious recitation and expertise in Tajweed. She has been teaching online for 15 years and specializes in helping students improve their recitation style.",
-    image: "/placeholder.svg",
+
   },
 ]
 
@@ -244,13 +244,7 @@ export default function OnlineNazraQuran() {
             {instructors.map((instructor, index) => (
               <Card key={index}>
                 <CardContent className="flex items-start space-x-4 pt-6">
-                  <Image
-                    src={instructor.image || "/placeholder.svg"}
-                    alt={instructor.name}
-                    width={80}
-                    height={80}
-                    className="rounded-full"
-                  />
+                  
                   <div>
                     <h3 className="text-xl font-semibold">{instructor.name}</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{instructor.role}</p>
