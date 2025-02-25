@@ -1,87 +1,75 @@
-"use client";
+"use client"
 
-import Header from "@/components/header";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { motion } from "framer-motion";
-import { Check, Star } from "lucide-react";
-import Footer from "@/components/footer";
-import Link from "next/link";
+import Header from "@/components/header"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { motion } from "framer-motion"
+import { Check, Star } from "lucide-react"
+import Footer from "@/components/footer"
+import Link from "next/link"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
-const names = ["Nimra Ahmed ", "Hasnain Afzal", "Saad Mahmood"];
+const names = ["Nimra Ahmed ", "Hasnain Afzal", "Saad Mahmood"]
 const reviews = [
   "The platform is user-friendly, and the tutors are highly skilled. I have improved my recitation significantly!",
   "Alif Academy has transformed my Quranic learning journey. The teachers are knowledgeable and patient, and the flexible schedule fits perfectly into my busy life.",
   "I love how interactive the lessons are! The one-on-one sessions have helped me gain confidence in my Tajweed skills.",
-];
+]
 
 const packages = [
   {
-    name: "Basic",
-    description: "Best for beginners. Add $10 for R Premium.",
+    description: "Best for beginners.",
+    name: " Add $10 for Premium.",
     price: "$30",
     features: [
       "2 live sessions per week",
+      "8 classes per month",
       "Basic Quran reading",
       "One-on-one class",
       "30-minute class",
       "24/7 support",
-      "8 classes per month",
     ],
     recommended: false,
+    options: ["Quran and Hadith translation", "Islamic knowledge", "Weekend classes", "Quran and Hadith memorization"],
   },
   {
-    name: "Standard",
-    description: "Best value for most people. Add $15 for R Premium.",
+    description: "Best value for most people.",
+    name: " Add $15 for Premium.",
     price: "$40",
     features: [
       "3 live sessions per week",
+      "12 classes per month",
       "Basic Quran reading",
       "One-on-one class",
       "30-minute class",
       "24/7 support",
-      "12 classes per month",
     ],
     recommended: true,
+    options: ["Quran and Hadith translation", "Islamic knowledge", "Weekend classes", "Quran and Hadith memorization"],
   },
   {
-    name: "Premium",
-    description: "Great for serious learners. Add $20 for R Premium.",
+    description: "Great for serious learners.",
+    name: " Add $20 for Premium.",
     price: "$60",
     features: [
       "5 live sessions per week",
+      "20 classes per month",
       "One-on-one class",
       "1-on-1 mentoring",
       "30-minute class",
       "Basic Quran reading",
-      "20 classes per month",
     ],
     recommended: false,
+    options: ["Quran and Hadith translation", "Islamic knowledge", "Weekend classes", "Quran and Hadith memorization"],
   },
-  {
-    name: "R Premium",
-    description: "For advanced learners.",
-    features: [
-      "Quran and Hadith translation",
-      "Islamic knowledge",
-      "Weekend classes",
-      "Quran and Hadith memorization",
-    ],
-    recommended: false,
-  },
-];
+]
+
 export default function Packages() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white dark:from-emerald-950 dark:to-gray-950">
       <Header />
+
       <main>
         <section className="py-20 bg-gradient-to-b from-emerald-50 to-white dark:from-emerald-950 dark:to-gray-950">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -92,14 +80,10 @@ export default function Packages() {
               className="text-center mb-12"
             >
               <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl mb-4">
-                Choose Your{" "}
-                <span className="text-emerald-600 dark:text-emerald-400">
-                  Learning Path
-                </span>
+                Choose Your <span className="text-emerald-600 dark:text-emerald-400">Learning Path</span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Select the package that best fits your goals and schedule. Start
-                your Quranic journey today.
+                Select the package that best fits your goals and schedule. Start your Quranic journey today.
               </p>
             </motion.div>
 
@@ -125,15 +109,27 @@ export default function Packages() {
                       </div>
                     )}
                     <CardHeader>
-                      <CardTitle className="text-2xl">{pkg.name}</CardTitle>
+                      <CardTitle className="text-2xl">
+                        <Select>
+                          <SelectTrigger className="w-full">
+                            <SelectValue placeholder={pkg.name} />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value={pkg.name}>{pkg.name}</SelectItem>
+                            {pkg.options.map((option, optionIndex) => (
+                              <SelectItem key={optionIndex} value={option}>
+                                {option}
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                      </CardTitle>
                       <CardDescription>{pkg.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <div className="mb-4 text-4xl font-bold">
                         {pkg.price}
-                        <span className="text-base font-normal text-muted-foreground">
-                          /month
-                        </span>
+                        <span className="text-base font-normal text-muted-foreground">/month</span>
                       </div>
                       <ul className="space-y-2">
                         {pkg.features.map((feature, idx) => (
@@ -146,10 +142,7 @@ export default function Packages() {
                     </CardContent>
                     <CardFooter>
                       <Link href="/contact" className="w-full">
-                        <Button
-                          variant="default"
-                          className="w-full hover:bg-emerald-700 transition-colors"
-                        >
+                        <Button variant="default" className="w-full hover:bg-emerald-700 transition-colors">
                           Choose Plan
                         </Button>
                       </Link>
@@ -184,14 +177,12 @@ export default function Packages() {
                 >
                   <div className="mb-4 flex items-center gap-4">
                     <img
-                      src={`https://api.dicebear.com/7.x/personas/svg?seed=Student${index+1}`}
+                      src={`https://api.dicebear.com/7.x/personas/svg?seed=Student${index + 1}`}
                       alt={`Student ${index}`}
                       className="w-12 h-12 rounded-full"
                     />
                     <div>
-                      <h3 className="font-semibold text-gray-900 dark:text-white">
-                        {names[index % names.length]}
-                      </h3>
+                      <h3 className="font-semibold text-gray-900 dark:text-white">{names[index % names.length]}</h3>
                       <div className="flex text-yellow-400">
                         {[...Array(5)].map((_, i) => (
                           <Star key={i} className="h-4 w-4 fill-current" />
@@ -199,9 +190,7 @@ export default function Packages() {
                       </div>
                     </div>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    {reviews[index % reviews.length]}
-                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">{reviews[index % reviews.length]}</p>
                 </motion.div>
               ))}
             </div>
@@ -246,9 +235,7 @@ export default function Packages() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5 }}
                 >
-                  <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
-                    {faq.q}
-                  </h3>
+                  <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">{faq.q}</h3>
                   <p className="text-gray-600 dark:text-gray-300">{faq.a}</p>
                 </motion.div>
               ))}
@@ -258,5 +245,6 @@ export default function Packages() {
         <Footer />
       </main>
     </div>
-  );
+  )
 }
+
